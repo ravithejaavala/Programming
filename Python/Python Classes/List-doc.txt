@@ -1,0 +1,149 @@
+List
+===========================================
+x=[1,2,3,4,5,6]
+sliceing ---- x[starting index:ending position(length):no of positions to move]
+
+the following returen's "None"------
+x.sort()---for ascending order
+x.sort(reverse=True)-----for desending order
+x.reverse()
+x.extend([e1,e2,e3,etc...])---- need to pass an another list to add
+x.append(element)
+x.insert(index,element) 
+x.remove(element)---it canot returns the removed element
+x.copy()------Return a shallow copy of the list
+x.reverse()---this method reverse the elements in the list
+x.clear()-----removes all the elements inside the list
+
+the following returen's some value------
+x.index(element) 
+x.pop(index)-----without index it will remove the last element, and also it returns the removed element
+x.count(element)-----How many times the elements are present
+
+min(x)---return's min value fron the list
+max(x)---return's max value fron the list
+
+link ----    https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+------------------------------------------------------------------------------------------------------------------
+String
+===========================================
+
+-------------------------------------------------------------------------------------------------------------------
+Random Module
+=============================================
+import random
+a--one integer
+b--another integer
+random.randint(a,b)--- a<=x<=b
+random.randrange(a,b)---- a<=x< b
+random.random()---- 0.0<=x<1.0  (float)
+random.uniform()--float in particular range
+random.choice(lisr or tuple etc)---sequences ie list,tuple etc
+random.shuffle(list)----shuffles the total list
+-------------------------------------------------------------------------------------------------------------------
+
+Sets
+=============================================
+set1={1,2,3,4,5}
+->Indexing, Slicing, Subscripting, Duplicates etc are not possible in sets
+-> set2=set()----will create an empty set
+""""set2={}----will create an empty dictionary"""   
+->set1.add(new_element) ->set1.add(tuple1)---it can add any immutabe items only, not mutable items like list. etc 
+->len(set1)---Does not include duplicates
+->set1.remove(present_element)-----if given element is not present in set it will give an error
+->set1.discard(any_element)-----if given element is present it will be removed else it will not give any error
+->set1.clear()---it clears the complete list, and returns an empty list
+->x=set1.pop()-----it removes the random item from set, it also returens the removed item from set
+->del set1 --- it deletes whhole set1, then the set1 is not present in further lines in a program
+set1={1,2,3,4,5,6}
+set2={4,5,6,7,8,9}
+
+Union---
+set1.union(set2)  or set2.union(set1)   ----o/p-> {1,2,3,4,5,6,7,8,9}----in braces we can pass list or tuple or set
+set1 | set2-----both should be sets, output will be same
+for multiple arguments
+set1.union(set2,set3...etc)  or set2.union(set1,set3,...etc)  or set1 | set2 | set3 ...etc
+
+update----(union update)
+set1.update(elements or set or list or tuple etc)-----the arguments(elements) present in the braces will be added to the set1
+set1 |= set2-----it will add elements of set2 to set1(only sets)
+i.e --- set1 = set1 | set2
+intersection---
+set1.intersection(set2,set3,..etc  or list or tuple)-----o/p-> {4,5,6}--returns common elements  "if common elements is not present it will return an empty set"
+set1 & set2 & set3 ...etc ----only sets
+
+intersection_update-----
+set1.intersection_update(set2,set3,...etc or list 0r tuple)-----common elements in both arguments will be updated as set1, other elements in set1 are removed
+set1 &= set2-----it wil update the set1 with intersection elements, othe elements are removed
+i.e set1 = set1 & set2
+
+difference--
+set1.difference(set2 or tuple or list)---it will give the elements in set1 but which are not in set2
+set1 - set2  --- both should be sets
+
+difference_update---
+set1.difference_update(set2 etc or tuple or list)---difference elements are updated as set1
+*If both sets are same then it returns an empty set*
+#set1 -= set2---- want to test this
+
+symmetric_difference----
+set1.symmetric_difference(set2)-----it will return the elements from both sets which are not in "common"
+--- it is not allowed for multiple sets i.e it will take only one argument
+ex --- o/p->{1,2,3,7,8,9}
+set1 ^ set2 ^ set3...etc----here multiple arguments can be passed
+
+symmetric_difference_update
+set1.symmetric_difference(set2)---it will update the set1 with symmetric_difference values
+#set1 ^= set2---- want to test this
+
+subset----
+-> set1 is subset of set2, if every element of set1 is in set2 i.e all the elements of set1 are present in set2
+-> it returns True or False
+set1.issubset(set2)---if set1 is subset of set2 then it returns True, else it returns False
+operator for this is "* set1 <= set2 *"--- for set1 is subset of set2
+"* set2 <= set1 *"--- for set2 is subset of set1
+
+superset--
+-> set2 is superset of set1, if every element of set1 is in set2 i.e all the elements of set1 are present in set2
+-> simply another set of subset
+set1.issuperset(set2)---if set2 is superset of set1 then it returns True, else it returns False
+operator for this is "* set1 >= set2 *"--- for set1 is superset of set2
+"* set2 >= set1 *"--- for set2 is superset of set1
+
+disjoint---- 
+-> if set1 and set2 has no common elements i.e no intersection elements then it is called disjoint set 
+-> it returns True or False
+set1.isdisjoint(set2 or list or tuple)---if set1 and set2 are disjoint then it returns True, else it returns False
+There is no operator for this method
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
