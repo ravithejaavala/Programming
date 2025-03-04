@@ -1,5 +1,13 @@
 List
 ===========================================
+Key points:
+----------
+1. List is represented by the square brackets -- []
+2. Each elements is separated by the comma (,)
+3. List allows homogenous data types and heterogenous data types are also allowed
+4. List allows the duplicates as well
+5. List allows nested list as well
+
 x=[1,2,3,4,5,6]
 sliceing ---- x[starting index:ending position(length):no of positions to move]
 
@@ -11,9 +19,16 @@ x.extend([e1,e2,e3,etc...])---- need to pass an another list to add
 x.append(element)
 x.insert(index,element) 
 x.remove(element)---it canot returns the removed element
-x.copy()------Return a shallow copy of the list
 x.reverse()---this method reverse the elements in the list
 x.clear()-----removes all the elements inside the list
+
+x.copy()------Return a shallow copy of the list 
+    To use copy() we need to import the copy module********
+    (A shallow copy creates a new array, but it does not create new copies of the elements within the array. 
+    Instead, it points to the same elements as the original array. 
+    A deep copy, on the other hand, creates a completely independent copy of both the array and its data.
+    It does not share any data with the original array.)*******
+
 
 the following returen's some value------
 x.index(element) 
@@ -27,6 +42,62 @@ link ----    https://docs.python.org/3/tutorial/datastructures.html#more-on-list
 ------------------------------------------------------------------------------------------------------------------
 String
 ===========================================
+A string is a sequence of characters. In python treats anthing inside quotes as a string. 
+This includes letters, numbers, and symbols. In python there is no
+character data type so single character is a string data type and length of 1.
+
+name = "Ravi Teja Redy"
+
+sliceing ---- name[starting index:ending position(length):no of positions to move]
+
+the following returen's "None"------
+
+
+
+the following returen's some value------
+name.capitalize()---this methods converts the first character of a string to an upper case letter and all the other characters to lower case
+name.casefold()--- this method converts all characters of the string into the lowercase letters and returns a new string.
+nam.center(24, '*')--- this method returns a new centered string after padding it with the specified character.
+    24--> represents the no.of th given elements in one side and both sides are same
+    res--> '*******Ravi Teja Redy********'   and '*' can be any charector or string
+name..count('element from the string')-----this method returns the number of occurences of a substring in the given string
+name.endswith()--- this method return True if a string ends with the specified suffix, if not it returns False  
+name.encode("elementt or group of elements")---- this method returns an encoded version of the given string
+name.expandtabs(int value)----this method takes an integer argument and the default size is 8 and  used \t characters
+    also written as ---> name = "Ravi\tTeja\tRedy"
+name.find('element')---- this method returns the index of first occurence of the substring (if found), if not found, it returns -1. while index() return's Value Error
+name.index("element")-----this method returns the index of a substring inside the string if it found. if the substring is not found in the main string then it raises an exception(ValueError), while found return's -1
+
+txt = 'python 3'
+txt.isalnum()----THis mehtod returns True, if all characters in the string are alphanumeric, if not it returns False
+txt.isalpha()---This method returns if all characteres in the strings are alphabets(it can be both lower case and upper case) and it returns False at leat one character is not alphabet
+name.isupper()-----this method returns True, if all characters in a string are upper case. it returns False, if any characters in a string are lower case characters
+name.islower()-----this method returns True, if all characters in a string are lower case. it returns False, if any characters in a string are upper case characters
+name.lower()----this method converts all upper case characters in a string to lower case
+name.upper()----this method converts all lower case characters in a string to upper case
+name.replace('a','b',1)-----this method replaces each matching occurence of a substring with another string, 'a' is replaced by 'b' and 1 represents no of matching elements to repkace
+name.split()-----this method breaks a string into a list of substrings and return's a ;ist, ex--> ['Ravi', 'Teja', 'Redy']
+name.swapcase()-----it converts all the characters to their opposite letter case
+
+msg = '        hello         '
+msg.strip()------this method removes the empty spaces in both the sides
+msg.lstrip()-----in the left side
+msg.rstrip()------in the right side
+
+*********
+.format() : this method allows the use of simple placeholders for formatting.
+use cases
+print('Hi {}, your account balance is {}'.format('sarath',3456843)) # default arguments
+print('Hi {1}, your account balance is {0}'.format('sarath',3456843)) # positional arguments
+print('Hi {name}, your account balance is {bala}'.format(name = 'sarath',bala = 3456843)) # keyword arguemnts
+
+
+------------------------------------------------------------------------------------------------------------------
+Tuple
+===========================================
+
+
+
 
 -------------------------------------------------------------------------------------------------------------------
 Random Module
