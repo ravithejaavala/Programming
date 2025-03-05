@@ -29,7 +29,6 @@ x.copy()------Return a shallow copy of the list
     A deep copy, on the other hand, creates a completely independent copy of both the array and its data.
     It does not share any data with the original array.)*******
 
-
 the following returen's some value------
 x.index(element) 
 x.pop(index)-----without index it will remove the last element, and also it returns the removed element
@@ -50,9 +49,7 @@ name = "Ravi Teja Redy"
 
 sliceing ---- name[starting index:ending position(length):no of positions to move]
 
-the following returen's "None"------
-
-
+the following returen's "None"------ no methods
 
 the following returen's some value------
 name.capitalize()---this methods converts the first character of a string to an upper case letter and all the other characters to lower case
@@ -91,10 +88,80 @@ print('Hi {}, your account balance is {}'.format('sarath',3456843)) # default ar
 print('Hi {1}, your account balance is {0}'.format('sarath',3456843)) # positional arguments
 print('Hi {name}, your account balance is {bala}'.format(name = 'sarath',bala = 3456843)) # keyword arguemnts
 
-
 ------------------------------------------------------------------------------------------------------------------
 Tuple
 ===========================================
+Tuple is an immutable data type, once we can create the data we can't able to change or we can't
+able to modify it...
+
+Notes:******
+-----
+1. Tuple is represented by the paranthesis ()
+2. Elements are separated by the comma (,)
+3. Tuple data type allows the homogenous and heterogenous data types
+4. Tuple also allows the duplicates
+5. Nested tuple also works
+tup = ("ravi", "teja", "raju")
+
+Methods-- only two methods for tuple
+--------
+tup.count() : this method returns the number of times the specified element appears in the tuple
+tup.index() : This method returns the index of the specified element in the tuple, if element not found then it will throw an error
+
+type conversion from list to tuple
+-----------------------------------
+li = [1,2,3]
+tup = tuple(li)
+print(type(tup))
+print(tup)
+
+------------------------------------------------------------------------------------------------------------------
+Dictionary
+===========================================
+The whole dictionary is an mutable data type, which means once we can create the data or object we can
+able to change or we can able to modify...
+
+1. Dictionary is represented by the curly braces {}
+2. Dict is an *unordered set* of key and value pair.
+
+dic = {}
+
+dic = {'key':'value'}
+
+for example of employee details:
+
+dic = {'name':'sarath','age':30,'sal':3465879}
+
+'name' , 'age', 'sal' -- keys
+
+'sarath', 30, 3465879   -- values
+
+keys : immutable data types only allowed  ************
+value : mutable/immutable data types are allowed  ************
+
+3. Each key and value is separated by the colon(:)
+4. Key and Value we can consider that as a *item* in dictionary
+5. Each item is separated by the comma(,)
+6. In dict both homogenous and heterogenous data types are allowed
+7. In dict there is no indexing and slicing operation
+8. Duplicates are also not allowed in dict, still if we are trying to create the duplicate then
+    it will consider the latest *key*
+
+dic = {'fname' : 'Ravi', 'mname' : 'Teja', 'age' : 20, 'sname' : 'Avala', 'lname' : 'Reddy'}
+
+Methods
+----------
+dic.clear()
+dic.copy()
+dic.fromkeys()
+dic.get()
+dic.items()
+dic.keys()
+dic.pop()
+dic.popitem()
+dic.setdefault()
+dic.update()
+dic.values()
 
 
 

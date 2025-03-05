@@ -53,14 +53,42 @@ res.reverse()
 print(l)
 print(res)
 
-'''
+
 
 tup = ("ravi", "teja", "raju")
 l= (1,8,3,6,8,["ravi", "teja", "raju"])
 print(type(tup))
 
-l[5]=["ravi"]
+l[5][2]=["ravi"]
 print(l)
 
+for i in l:
+    print(i)
+
+    '''
+# ==========   Dictnory =========
+
+'''
+d2.clear()
+d2.copy()
+d2.fromkeys()
+d2.get()
+d2.items()
+d2.keys()
+d2.pop()
+d2.popitem()
+d2.setdefault()
+d2.update()
+d2.values()
+'''
+# one 'key : value' pair is known as one item
+d1= {'fname' : 'Ravi', 'mname' : 'Teja', 'age' : 20, 'sname' : 'Avala', 'lname' : 'Reddy'}
+
+print(d1)
 
 
+
+
+d2 = {'list' : {1:'one',2:'two',3:'three'}}
+print(id(d1))
+print(id(d1['fname']))

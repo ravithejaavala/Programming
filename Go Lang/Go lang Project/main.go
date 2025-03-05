@@ -6,6 +6,8 @@ import (
 )
 
 // These are package variables, these are not defined using ":=" this type
+//
+//2:28 min
 var confName = "Go-Lang Conference"
 
 const confTickets = 50
@@ -48,7 +50,7 @@ func main() {
 		// Function is defined to take inputs from the user
 		userfname, userlname, userEmail, userTickets := userinputs() //this can't define outside the function, because it need to iterate
 		// function is defined to validate the user inputs and returning multiple values from that function
-		isValidname, isValidemail, isValidtickets := validateuser(userfname, userlname, userEmail, userTickets, remainTickets) //this can't define outside the function, because it need to iterate
+		isValidname, isValidemail, isValidtickets := validateuser(userfname, userlname, userEmail, userTickets) //this can't define outside the function, because it need to iterate
 		// Also we are declaring multiple variables at a time
 		if isValidemail && isValidname && isValidtickets {
 			bookticket(userfname, userlname, userEmail, userTickets)
@@ -59,26 +61,22 @@ func main() {
 				break
 			}
 		} else { // 'else if' is used for more conditions
-			if isValidname {
+			if !isValidname {
 				fmt.Printf("You entered First name or Last name is too short\n")
 			}
-			if isValidemail {
+			if !isValidemail {
 				fmt.Printf("You entered Email doesn't contain '@'\n")
 			}
-			if isValidtickets {
+			if !isValidtickets {
 				fmt.Printf("You entered NO.of Tickets is invalid\n")
 			}
+			// we are using '!' symbol to check True or false correctly, if validate is true(correct), then dont need to execute that
 			// Here we used only if statements, because we need to check all the conditions
 		}
 
 	}
 }
 
-func greetusers() {
-	fmt.Printf("Welcome to %v Booking Application\n", confName)
-	fmt.Printf("We have total of %v tickets ,Now the available tickets are %v\n", confTickets, remainTickets)
-	fmt.Printf("Buy your tickets to attend %v\n", confName)
-}
 func userinputs() (string, string, string, int) {
 	var userfname string
 	var userlname string
@@ -116,19 +114,6 @@ func getfirstnames() []string {
 	return firstnames //define of both input and output(return) parameterswith types are compulsary when they are used
 }
 
-func validateuser(userfname string, userlname string, userEmail string, userTickets int, remainTickets int) (bool, bool, bool) {
-	// in above line we defined the return data types "bool" multiple times, because this is compulsary for no.of values you are returning
-	// And they are in other paranthasis , when they are multiple
-	isValidname := len(userfname) >= 2 && len(userlname) >= 2
-	// validating the useer input
-	isValidemail := strings.Contains(userEmail, "@")
-	// Validating the user email contains '@'
-	isValidtickets := userTickets > 0 && userTickets <= remainTickets
-	// using AND and OR operations in above and below respectively
-	// isValidcity := userCity == "tirupati" || userCity == "chittoor"
-	return isValidname, isValidemail, isValidtickets
-	//***In Go we can return multiple values, other than any any other languages
-}
 func bookticket(userfname string, userlname string, userEmail string, userTickets int) {
 
 	names = append(names, userfname+" "+userlname)
