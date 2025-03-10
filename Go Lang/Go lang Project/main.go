@@ -1,5 +1,6 @@
 package main
 
+// Use "go run ." to run all the files at a time
 import (
 	"fmt"
 	"strings"

@@ -11,6 +11,12 @@ Key points:
 x=[1,2,3,4,5,6]
 sliceing ---- x[starting index:ending position(length):no of positions to move]
 
+
+li=string.split("any symbol or space or any char")--- this creates the list from the string or input string, with the help of given symbol or space etc
+***Ex-->str = input()      # input = 1,2,3,4,5,6     str_num_sep_By_commma
+        list_res = str.split(',')
+        print(list_res)    # output = [1,2,3,4,5,6]
+
 the following returen's "None"------
 x.sort()---for ascending order
 x.sort(reverse=True)-----for desending order
@@ -21,6 +27,10 @@ x.insert(index,element)
 x.remove(element)---it canot returns the removed element
 x.reverse()---this method reverse the elements in the list
 x.clear()-----removes all the elements inside the list
+
+(any character).join(string or list or tuple with string elements)------ this saperates the string or list with str ele or tuple with str ele, with given character
+***Ex-->l= ["1", "2", "3", "4"]
+        print(','.join(l))        # output   --> 1,2,3,4
 
 x.copy()------Return a shallow copy of the list 
     To use copy() we need to import the copy module********
@@ -62,8 +72,8 @@ name.endswith()--- this method return True if a string ends with the specified s
 name.encode("elementt or group of elements")---- this method returns an encoded version of the given string
 name.expandtabs(int value)----this method takes an integer argument and the default size is 8 and  used \t characters
     also written as ---> name = "Ravi\tTeja\tRedy"
-name.find('element')---- this method returns the index of first occurence of the substring (if found), if not found, it returns -1. while index() return's Value Error
-name.index("element")-----this method returns the index of a substring inside the string if it found. if the substring is not found in the main string then it raises an exception(ValueError), while found return's -1
+***name.find('element')---- this method returns the index of first occurence of the substring (if found), if not found, it returns -1. while index() return's Value Error
+***name.index("element")-----this method returns the index of a substring inside the string if it found. if the substring is not found in the main string then it raises an exception(ValueError), while found return's -1
 
 txt = 'python 3'
 txt.isalnum()----THis mehtod returns True, if all characters in the string are alphanumeric, if not it returns False
@@ -73,7 +83,7 @@ name.islower()-----this method returns True, if all characters in a string are l
 name.lower()----this method converts all upper case characters in a string to lower case
 name.upper()----this method converts all lower case characters in a string to upper case
 name.replace('a','b',1)-----this method replaces each matching occurence of a substring with another string, 'a' is replaced by 'b' and 1 represents no of matching elements to repkace
-name.split()-----this method breaks a string into a list of substrings and return's a ;ist, ex--> ['Ravi', 'Teja', 'Redy']
+name.split()-----this method breaks a string into a list of substrings and return's a list, ex--> ['Ravi', 'Teja', 'Redy']
 name.swapcase()-----it converts all the characters to their opposite letter case
 
 msg = '        hello         '
@@ -182,17 +192,19 @@ random.shuffle(list)----shuffles the total list
 
 Sets
 =============================================
-set1={1,2,3,4,5}
+set1={1,2,3,4,5}   ---- Mutable data Type
 ->Indexing, Slicing, Subscripting, Duplicates etc are not possible in sets
+->We can only use loops to access the elements in set
 -> set2=set()----will create an empty set
 """"set2={}----will create an empty dictionary"""   
+
 ->set1.add(new_element) ->set1.add(tuple1)---it can add any immutabe items only, not mutable items like list. etc 
 ->len(set1)---Does not include duplicates
 ->set1.remove(present_element)-----if given element is not present in set it will give an error
 ->set1.discard(any_element)-----if given element is present it will be removed else it will not give any error
 ->set1.clear()---it clears the complete list, and returns an empty list
 ->x=set1.pop()-----it removes the random item from set, it also returens the removed item from set
-->del set1 --- it deletes whhole set1, then the set1 is not present in further lines in a program
+->del set1 --- it deletes whole set1, then the set1 is not present in further lines in a program
 set1={1,2,3,4,5,6}
 set2={4,5,6,7,8,9}
 
@@ -211,8 +223,9 @@ set1.intersection(set2,set3,..etc  or list or tuple)-----o/p-> {4,5,6}--returns 
 set1 & set2 & set3 ...etc ----only sets
 
 intersection_update-----
-set1.intersection_update(set2,set3,...etc or list 0r tuple)-----common elements in both arguments will be updated as set1, other elements in set1 are removed
-set1 &= set2-----it wil update the set1 with intersection elements, othe elements are removed
+set1.intersection_update(set2,set3,...etc or list 0r tuple)-----common elements in both arguments will be Returned
+
+set1 &= set2-----it wil updated as set1, other elements in set1 are removed
 i.e set1 = set1 & set2
 
 difference--

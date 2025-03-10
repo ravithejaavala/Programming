@@ -75,11 +75,13 @@ d2.fromkeys()
 d2.get()
 d2.items()
 d2.keys()
+d2.values()
+d2.update()
+
 d2.pop()
 d2.popitem()
 d2.setdefault()
-d2.update()
-d2.values()
+'''
 '''
 # one 'key : value' pair is known as one item
 d1= {'fname' : 'Ravi', 'mname' : 'Teja', 'age' : 20, 'sname' : 'Avala', 'lname' : 'Reddy'}
@@ -92,3 +94,48 @@ print(d1)
 d2 = {'list' : {1:'one',2:'two',3:'three'}}
 print(id(d1))
 print(id(d1['fname']))
+
+res = d1 .get('fname') # if key is not in the given dictnory, it returns 'None'
+print(res)
+
+numbers = {1,2,3}
+
+values = "int"
+
+d3 = dict.fromkeys(values, numbers)
+print(d3)
+
+
+
+d4= {'fname' : 'Ravi', 'mname' : 'Teja', 'age' : 20, 'sname' : 'Avala', 'lname' : 'Reddy'}
+
+res= d4.popitem("fname")
+print(res)
+
+
+
+
+set2=set()
+
+print(type(set2))
+
+set1={1,2,3,4,5}
+
+
+tup = ("ravi", "teja", "raju")
+
+set2={3,4,5,6,7,8,9,0}
+set1 &= set2
+
+print(set1)
+
+'''
+x=3
+y=5
+l= [[0 for col in range(5)] for row in range(3)]
+res_lis=[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
+for i in range(0,x):
+    for j in range(0,y):
+        res=res_lis[i][j] 
+        #print(res)
+print(l)
