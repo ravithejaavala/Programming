@@ -1,0 +1,15 @@
+Easy Level:
+
+Sum of Digits: Write a program to calculate the sum of digits of a given number.
+Leap Year Checker: Determine if a given year is a leap year.
+Armstrong Number: Check if a given number is an Armstrong number.
+Intermediate Level:
+
+Array Rotation: Rotate an array by 'k' positions to the right.
+Matrix Transpose: Compute the transpose of a given matrix.
+Balanced Parentheses: Check if an expression has balanced parentheses using a stack.
+Advanced Level:
+
+Merge Intervals: Given a set of intervals, merge all overlapping intervals.
+Dijkstra's Algorithm: Implement Dijkstra's algorithm to find the shortest path in a graph.
+Knapsack Problem: Solve the 0/1 Knapsack problem using dynamic programming.

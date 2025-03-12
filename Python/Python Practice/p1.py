@@ -44,10 +44,8 @@ list1.sort(reverse=True)
 print(list1)
 
 
-
 # getString: to get a string from console input
 # printString: to print the string in upper case.
-
 
 class two():
     self= ""
@@ -56,77 +54,8 @@ class two():
     def printString(self):
         print(self.s1)
 
-
-
 st = two()
-
 res1=st.getString()
 res2=st.printString()
 
-
-import math
-
-C = 50
-H = 30.
-inp = input()
-
-
-l=inp.split(",")
-res_li=[]
-for i in l:
-    D=int(i)
-    #Q = ((2 * C * D)/H)**(1/2)
-    Q = math.sqrt((2 * C * D)/H)
-    res_li.append(round(Q))
-print(res_li)
-
-l= ["1", "2", "3", "4"]
-print(','.join(l))
-
-"""""
-
-x = int(input("Enter X value : "))
-y = int(input("Enter Y value : "))
-res_lis=[[0]*y]*x
-for i in range(0,x):
-    for j in range(0,y):
-        res_lis[i][j] = i*j
-    print(res_lis)
-
-print(res_lis)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""

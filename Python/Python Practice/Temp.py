@@ -129,13 +129,85 @@ set1 &= set2
 
 print(set1)
 
-'''
+
 x=3
 y=5
 l= [[0 for col in range(5)] for row in range(3)]
-res_lis=[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
+res_lis=[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
 for i in range(0,x):
     for j in range(0,y):
-        res=res_lis[i][j] 
+        res_lis[i][j]=i**j
         #print(res)
-print(l)
+print(res_lis)
+
+nums_str = input("Enter numbers, seperated by comma : ")
+nums_lis=nums_str.split(',')
+print(nums_lis)
+
+
+
+lis = input().split(",")
+print(lis)
+
+'''
+from collections import Counter
+l=[1,2,3,4,5,6,7,8,9,0]
+
+res=Counter(l)
+print(res)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

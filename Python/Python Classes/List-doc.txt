@@ -17,6 +17,18 @@ li=string.split("any symbol or space or any char")--- this creates the list from
         list_res = str.split(',')
         print(list_res)    # output = [1,2,3,4,5,6]
 
+to create multi list (nested lists) :
+    mul_lis=[[0 for i in range(y)] for j in range(x)] is used, where x and y are the int inputs. i represents column, j represents rows 
+***Ex-->nums_str = input("Enter numbers, seperated by comma : ") # input 3,5   // dimensions in string
+        nums_lis=nums_str.split(',')   # dimensions in list 
+        x=int(nums_lis[0])   # rowNum
+        y=int(nums_lis[1])   # colNum
+        mul_lis=[[0 for i in range(y)] for j in range(x)]  #This creates [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+        for i in range(0,x):
+            for j in range(0,y):
+                mul_lis[i][j] = i*j
+        print(mul_lis)    # [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+
 the following returen's "None"------
 x.sort()---for ascending order
 x.sort(reverse=True)-----for desending order
@@ -28,9 +40,10 @@ x.remove(element)---it canot returns the removed element
 x.reverse()---this method reverse the elements in the list
 x.clear()-----removes all the elements inside the list
 
-(any character).join(string or list or tuple with string elements)------ this saperates the string or list with str ele or tuple with str ele, with given character
+str=(any character).join(string or list or tuple with string elements)------ this saperates the string or list with str ele or tuple with str ele, with given character
 ***Ex-->l= ["1", "2", "3", "4"]
-        print(','.join(l))        # output   --> 1,2,3,4
+        str= ','.join(l)
+        print(str)        # output   --> 1,2,3,4
 
 x.copy()------Return a shallow copy of the list 
     To use copy() we need to import the copy module********
@@ -67,7 +80,7 @@ name.casefold()--- this method converts all characters of the string into the lo
 nam.center(24, '*')--- this method returns a new centered string after padding it with the specified character.
     24--> represents the no.of th given elements in one side and both sides are same
     res--> '*******Ravi Teja Redy********'   and '*' can be any charector or string
-name..count('element from the string')-----this method returns the number of occurences of a substring in the given string
+name.count('element from the string')-----this method returns the number of occurences of a substring in the given string
 name.endswith()--- this method return True if a string ends with the specified suffix, if not it returns False  
 name.encode("elementt or group of elements")---- this method returns an encoded version of the given string
 name.expandtabs(int value)----this method takes an integer argument and the default size is 8 and  used \t characters
