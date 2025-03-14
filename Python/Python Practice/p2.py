@@ -59,21 +59,57 @@ while True:
 for i in lis_lines:
     print(i)
 
+
+
+lis = input().split(" ")
+lis.sort()
+res=[]
+for i in lis:
+    if i not in res:
+        res.append(i)
+print(' '.join(res))
+
+# or 
+
+
+lis = input().split(" ")
+set1 = set(lis)
+lis2=list(set1)
+lis2.sort()
+print(' '.join(lis2))
+
+
+
+inp = input()
+lis= inp.split(",")
+res=[]
+for i in lis:
+    num=0
+    k=3
+    for j in range(4):
+        num=num+int(i[j])*(2**k)
+        k-=1
+    if num%5==0:    
+        res.append(num)
+res2=[]
+for num in res:
+    temp_lis=[0,0,0,0]
+    k=3
+    for j in range(4):
+        if num == 0:
+            temp_lis[j]='0'
+        elif num >= 2**k:
+            temp_lis[j]='1'
+            num=num - 2**k
+        else:
+            temp_lis[j]='0'
+        k-=1
+    res2.append(''.join(temp_lis))
+
+print(','.join(res2))
+
+
 """
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

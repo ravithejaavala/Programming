@@ -149,7 +149,7 @@ print(nums_lis)
 lis = input().split(",")
 print(lis)
 
-'''
+
 from collections import Counter
 l=[1,2,3,4,5,6,7,8,9,0]
 
@@ -157,11 +157,32 @@ res=Counter(l)
 print(res)
 
 
+i='1111'
+num=0
+k=3
+for j in range(4):
+    num=num+int(i[j])*(2**k)
+    k-=1
+    print(num)
 
 
+num=10
+temp_lis=[0,0,0,0]
+k=3
+for j in range(4):
+    if num == 0:
+        temp_lis[j]='0'
+        break
+    elif num >= 2**k:
+        temp_lis[j]='1'
+        num=num - 2**k
+    else:
+        temp_lis[j]='0'
+    k-=1
 
-
-
+bin=''.join(tlis)
+print(bin)
+'''
 
 
 
