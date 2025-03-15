@@ -182,16 +182,32 @@ for j in range(4):
 
 bin=''.join(tlis)
 print(bin)
+
+
+n = int(input("Enter the number of stones : "))
+
+stones = [n]
+for i in range(0,n):
+    stone=int(input("Enter weight of stone : "))
+    stones.append(stone)
+
+def partation(stones,n):
+    for i in range(0,n):
+        sum=0
+        for j in range(0,n):
+            if i != j:
+                sum=stones[j]+sum
+        if sum == stones[i]:
+            return 1
+    return 0
+
+result = partation(stones,n)
+if result == 1:
+    print("TRUE")
+else:
+    print("FALSE")
+
 '''
-
-
-
-
-
-
-
-
-
 
 
 
