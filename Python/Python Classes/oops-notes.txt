@@ -1,3 +1,0 @@
-method --- a function that is associated with the class
-
-

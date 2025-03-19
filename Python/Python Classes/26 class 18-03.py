@@ -35,7 +35,10 @@ any object of the class. So the attributes are:
 A class is a collection of objects. Classes are blueprints for creating objects. A class
 defines a set of attributes and methods that the created objects(instances)...
 
+A class is a blueprint for creating objects. It defines attributes (variables) 
+and methods (functions) that describe the behavior of the objects created from the class.
 
+class is logical structure 
 
 Note:
 ----
@@ -44,7 +47,7 @@ attributes are the variables that belong to a class
 While writing class name - the first character should be in the upper case
 CLass is a logical structure
 
-# _init_  : special method/dunder method
+# __init__  : special method/dunder method/ magic method  (__new__, )
 
 Objects:
 -----
@@ -55,6 +58,29 @@ An object consists of:
 State : It is represented by the attributes and reflects the properties of an object
 Behaviour : It is represented by the methods of an object and reflects the response of an
             object to the other object
+
+
+Constructor in Python (__init__ method)
+--------------------------------------
+A constructor is a special method in Python classes, named __init__, that is automatically 
+called when an object is created. It initializes the object's attributes.
+
+__new__ :- It is a constructor, that creates the new instance of a class   
+          or Creates a new instance  i.e (memory allocation)
+    ***whenever the object is created, internally the "__new__" 
+    method is called and then an instance is created(memory is allocated)
+
+__init__ :- Initializes the created instance
+
+***super class is object
+
+1. Default Constructor :- If no parameters are passed, the constructor can still define default values.
+
+2. parameterized  :-  
+
+
+
+
 
 
 '''
