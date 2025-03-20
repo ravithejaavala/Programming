@@ -72,6 +72,8 @@ __new__ :- It is a constructor, that creates the new instance of a class
 
 __init__ :- Initializes the created instance
 
+**** In both cases the "self" is a parameter, which is used to create the instance attributes(instance variables)
+
 ***super class is object
 
 1. Default Constructor :- If no parameters are passed, the constructor can still define default values.
@@ -80,7 +82,13 @@ __init__ :- Initializes the created instance
 
 
 
-
+"""
+Key Differences
+Attribute Type   Defined In     	 Shared/Unique	                Access Method
+Instance	   Inside __init__()	Unique to instance	           object.attribute, get()
+Class	       Outside __init__()	Shared across instances	       ClassName.attribute
+Static      	@staticmethod	    Independent of class/instance	ClassName.method()
+"""
 
 
 
@@ -348,7 +356,7 @@ print(Math.add(5, 3))  # Output: 8
 """
 Key Differences
 Attribute Type   Defined In     	 Shared/Unique	                Access Method
-Instance	   Inside __init__()	Unique to instance	           object.attribute
+Instance	   Inside __init__()	Unique to instance	           object.attribute, self() and get()
 Class	       Outside __init__()	Shared across instances	       ClassName.attribute
 Static      	@staticmethod	    Independent of class/instance	ClassName.method()
 """
