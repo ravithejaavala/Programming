@@ -216,26 +216,63 @@ m1.display_details()
 d1.display_details()
 
 
-"""
-
-
 class Employee:
-    company = "TechCorp"
+    company = "DELL"
 
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
     
-    @classmethod
-    def new_company(cls, new_company):
-        cls.company = new_company
-    
     def display_details(self):
         print("Name : ", self.name," Salary : ", self.salary," Company:",self.company)
 
+    @classmethod
+    def cls_details(cls):
+        print(cls.company, cls.name)
+
+
+
+m1 = Employee("Ravi", 70000)
 # CV IM
-# IV CM
-
-m1 = Employee("Alice", 70000)
-
 m1.display_details()
+# IV CM
+m1.cls_details()
+
+class Shape:
+    pi = 3.146
+    def area(self):
+        return 
+    
+class Circle(Shape):
+    def __init__(self,radius):
+        super().__init__()
+        self.radius=radius
+    def area(self):
+        return self.pi*self.radius*self.radius
+    def peri(self):
+        return 2*self.pi*self.radius
+
+class Rectangle(Shape):
+    def __init__(self,length,breath):
+        super().__init__()
+        self.length=length
+        self.breath=breath
+    def area(self):
+        return self.length*self.breath
+    def peri(self):
+        return self.length+self.breath
+
+cir = Circle(10)
+a1=cir.area()
+print("Area of a Circle : ",a1)
+p1=cir.peri()
+print("Perimeter of a Circle : ",p1)
+
+rec = Rectangle(5,6)
+a2=rec.area()
+print("Area of a Rectangle : ",a2)
+p2=rec.peri()
+print("Perimeter of a Rectangle : ",p2)
+"""
+
+
