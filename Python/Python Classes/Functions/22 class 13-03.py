@@ -33,7 +33,7 @@ Types of function arguments:
 --------------------------
 
 1. Default arguments
-2. Keywor arguments
+2. Keyword arguments
 3. Positional arguments
 4. Arbitrary arguments (variable length argument)
 
