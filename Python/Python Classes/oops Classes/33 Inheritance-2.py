@@ -106,7 +106,7 @@ ravi.get_emp_details()
 
 
 '''
-Herarchical inheritance:
+Hierarchical inheritance:
 ---------------------
 When more than one derived class or child class are created from a single base class
 this type of inheritance is called hierarchical inheritance..
