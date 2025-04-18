@@ -36,7 +36,7 @@ and after the function...
 
 3 things are required:
 ----
-first class functions
+first class functions or objects
 nested functions
 wrapper functions
 
