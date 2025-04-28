@@ -26,10 +26,10 @@
 
 > 13.Decorators
 
-> 14. File Handling
+> 14.File Handling
 
 > 15.Database con, Date and time
 
-> 16. Regular expression
+> 16.Regular expression
 
 > 17.Multi threading
