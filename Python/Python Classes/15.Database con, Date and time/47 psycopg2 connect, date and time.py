@@ -15,7 +15,7 @@ import psycopg2
 
 DB_NAME = 'postgres'
 DB_USER = 'postgres'
-DB_PASS = 'Password'
+DB_PASS = 'ravi'
 DB_HOST = 'localhost'
 DB_PORT = '5432'
 
