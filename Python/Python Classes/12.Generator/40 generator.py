@@ -14,7 +14,7 @@ There are 2 types of generators:
 1. generator function:
 --------------------------
 
-A generator function is  a special tyoe of function that returns an iterator object.
+A generator function is  a special type of function that returns an iterator object.
 Insted of using return to send back a single value, generator functions use *yield*
 keyword to produce a series of results over time...
 This allows the function to generate values and pauses its execution after each yield,

@@ -72,6 +72,13 @@ json.loads() : This method parses a json string and converts it into a python ob
 (usually a dict or list). It takes a json string as an argument and returns the corresponding
 python object...
 
+In Django---
+
+Serialization---	Python → JSON (e.g., sending data)
+Deserialization----	JSON → Python (e.g., receiving data)
+Serializer-------	Class that defines how data is converted
+
+
 
 database:
 mysql
