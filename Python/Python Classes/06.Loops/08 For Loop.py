@@ -97,7 +97,7 @@ for i in name:
 continue statement:
 ------------------
 Continue statement is a loop control statement that forces to execute the next
-iteration of the loop while skiiping the rest of the code inside the loop for the
+iteration of the loop while skipping the rest of the code inside the loop for the
 current iteration.
 
 Python continue statement skips the execution of the program block after that the
