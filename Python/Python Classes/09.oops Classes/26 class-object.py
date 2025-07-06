@@ -84,7 +84,7 @@ Note:
 classes are created by keyword class
 attributes are the variables that belong to a class
 While writing class name - the first character should be in the upper case
-CLass is a logical structure
+Class is a logical structure
 
 # __init__  : special method/dunder method/ magic method  (__new__, )
 

@@ -15,7 +15,10 @@ sliceing ---- x[starting index:ending position(length):no of positions to move]
 li=string.split("any symbol or space or any char")--- this creates the list from the string or input string, with the help of given symbol or space etc
 ***Ex-->str = input()      # input = 1,2,3,4,5,6     str_num_sep_By_commma
         list_res = str.split(',')
-        print(list_res)    # output = [1,2,3,4,5,6]
+        print(list_res)    # output = ['1','2','3','4','5','6']-- the elements in the list is string
+
+        list_res = list(map(int, str.split(',')))
+        print(list_res)    # output = [1,2,3,4,5,6]-- the elements in the list is integer
 
 to create multi list (nested lists) :
     mul_lis=[[0 for i in range(y)] for j in range(x)] is used, where x and y are the int inputs. i represents column, j represents rows 

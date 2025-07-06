@@ -111,15 +111,28 @@ print(','.join(res2))
 
 """
 
+# str = input()
+# str1=str
+# li = str1.split(",")
+# print(li)
+
+# li2 = list(map(int, str.split(',')))
+
+# li3=list(li2)
+# print(li3)
 
 
+# def wish(n):
 
+#     return n % 2 == 0
+# n = [1,2,3,4,5] # global variable
+# res = filter(wish, n)
 
+# print(type(res))
 
+# print(list(res))
 
+# lis = [[1,2,3],[4,5,6],[7,8,9]]
 
-
-
-
-
-
+# nest_list_com = [j for i in lis for j in i]
+# print(nest_list_com)
