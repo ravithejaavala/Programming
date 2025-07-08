@@ -1,0 +1,42 @@
+Hi, I'M Ravitheja Reddy Avala. I'm a B.Tech graduate in Electrical and Electronics Engineering, 
+
+and I'M currently looking for opportunities in DevOps and Cloud roles.
+
+I have hands-on knowledge with AWS core services like EC2, S3, VPC, IAM, Lambda and also infrastructure deployments using Terraform, set up CI/CD pipelines using Jenkins, and I have also knowledge on containerization and orchestration tools Docker and Kubernetes.
+
+I also enjoy coding with Python.
+
+I'm a quick learner and passionate about automation and cloud technologies. 
+
+I'm now looking forward to contributing to a company where I can grow as an AWS Engineer.
+
+
+
+
+ 
+
+where do you see your self in five years?
+
+In five years, I see myself as a Senior DevOps Engineer, primarily working on AWS-based cloud infrastructure. 
+I plan to earn relevant certifications like the AWS Certified DevOps Engineer and keep upgrading my skills in 
+areas like Kubernetes, CI/CD automation, and infrastructure as code using tools like Terraform. 
+I also aim to contribute to architectural decisions and mentor junior team members, 
+helping drive efficiency and innovation within the DevOps team
+
+
+
+Route 53: Like your phone's contact list – it converts names to numbers (domain → IP).
+
+Route Table: Like Google Maps for your VPC – tells traffic how to reach its destination.
+
+API Gateway: Like the reception desk – takes user requests and forwards them to the correct backend (Lambda, EC2, etc.).
+
+
+Amazon CloudFront is a Content Delivery Network (CDN) service from AWS.
+It delivers content like HTML, CSS, images, videos, or entire websites to users 
+with low latency and high transfer speed by caching it at edge locations around the world.
+
+
+
+
+

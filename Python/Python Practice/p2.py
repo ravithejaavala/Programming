@@ -136,3 +136,27 @@ print(','.join(res2))
 
 # nest_list_com = [j for i in lis for j in i]
 # print(nest_list_com)
+
+
+# prime number
+
+# num = int(input("Enter a Numer : "))
+# count=0
+# for i in range(2,num):
+#     if num%i == 0:
+#         count+=1
+    
+# if count==0:
+#     print("It is a Prime number")
+# else:
+#     print("It is not a prime number")
+
+
+# second Largest Number
+
+inp = input()
+
+li= list(map(int, inp.split(",")))
+
+li.sort()
+print(li[len(li)-2])
